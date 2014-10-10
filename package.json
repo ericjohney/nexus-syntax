@@ -1,0 +1,10 @@
+{
+  "name": "nexus-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Port of Nexus theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
