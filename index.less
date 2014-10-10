@@ -145,7 +145,11 @@
 }
 
 .variable {
-  color: #D0E3FF;
+  color: #D0D0FF;
+
+  &.assignment {
+    color: @syntax-text-color;
+  }
 }
 
 .invalid.deprecated {
@@ -199,29 +203,19 @@
       color: #B18A3D;
     }
   }
-
-  .variable {
-    color: #8A9A95;
-  }
 }
 
 .support {
-  color: #FFFFB6;
 
   &.function {
     color: #DA4939;
   }
 
   &.constant {
-    color: #FFD2A7;
 
     &.w3c-standard-color-name {
       color: #6D9CBE;
     }
-  }
-
-  &.variable {
-    color: @syntax-text-color;
   }
 
   &.type.property-name.css {
@@ -229,27 +223,16 @@
   }
 }
 
-.source .entity.name.tag, .source .entity.other.attribute-name, .meta.tag.inline, .meta.tag.inline .entity {
-  color: #FFC66D;
-}
-
 .entity {
-  color: #FFD2A7;
+  color: #FFC66D;
 
-  &.other.attribute-name {
-    color: #FFD7B1;
-  }
-
-  &.name.tag.namespace,
-  &.other.attribute-name.namespace {
-    color: #E18964;
-  }
-  &.function {
-    color: #FFC66D;
-  }
-  &.class, &.inherited-class {
+  &.type.class, &.type.inherited-class {
     color: @syntax-text-color;
   }
+}
+
+.tag {
+  color: #FFC66D;
 }
 
 .meta {
@@ -274,40 +257,8 @@
     color: #494949;
   }
 
-  &.tag,
-  &.tag .entity {
-    color: #96CBFE;
-  }
-
-  &.selector.css .entity.name.tag {
-    text-decoration: underline;
-    color: #96CBFE;
-  }
-
-  &.selector.css .entity.other.attribute-name.tag.pseudo-class {
-    color: #8F9D6A;
-  }
-
-  &.selector.css .entity.other.attribute-name.id {
-    color: #8B98AB;
-  }
-
-  &.selector.css .entity.other.attribute-name.class {
-    color: #62B1FE;
-  }
-
-  &.property-group .support.constant.property-value.css,
-  &.property-value .support.constant.property-value.css {
-    color: #F9EE98;
-  }
-
   &.preprocessor.at-rule .keyword.control.at-rule {
     color: #8693A5;
-  }
-
-  &.property-value .support.constant.named-color.css,
-  &.property-value .constant {
-    color: #87C38A;
   }
 
   &.constructor.argument.css {
