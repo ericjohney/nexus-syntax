@@ -113,19 +113,6 @@
   font-style: italic;
 }
 
-.entity {
-  color: #FFD2A7;
-
-  &.name.type {
-    text-decoration: underline;
-    color: #FFC66D;
-  }
-
-  &.other.inherited-class {
-    color: #9B5C2E;
-  }
-}
-
 .keyword {
   color: #CC7833;
 
@@ -141,11 +128,7 @@
 .storage {
   color: #CFCB90;
 
-  &.modifier {
-    color: #96CBFE;
-  }
-
-  &.function {
+  &.class, &.function, &.modifier {
     color: #CC7833;
   }
 }
@@ -155,6 +138,9 @@
 
   &.numeric {
     color: #A5C261;
+  }
+  &.boolean {
+    color: #6D9CBE;
   }
 }
 
@@ -228,6 +214,10 @@
 
   &.constant {
     color: #FFD2A7;
+
+    &.w3c-standard-color-name {
+      color: #6D9CBE;
+    }
   }
 
   &.variable {
@@ -244,6 +234,8 @@
 }
 
 .entity {
+  color: #FFD2A7;
+
   &.other.attribute-name {
     color: #FFD7B1;
   }
@@ -251,6 +243,12 @@
   &.name.tag.namespace,
   &.other.attribute-name.namespace {
     color: #E18964;
+  }
+  &.function {
+    color: #FFC66D;
+  }
+  &.class, &.inherited-class {
+    color: @syntax-text-color;
   }
 }
 
