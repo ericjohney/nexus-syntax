@@ -2,9 +2,10 @@
   "name": "nexus-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "Port of Nexus theme",
+  "description": "Port of the nexus theme from sublime",
+  "repository": "https://github.com/ericjohney/nexus-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.200.0"
+    "atom": ">=0.50.0"
   }
 }
